@@ -710,6 +710,8 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         keycode &= 0xff;
     }
 
+// disable AML getout when mouse key is pressed
+/*
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
     // reduce auto mouse timeout if mouse key is pressed.
     if ((is_mouse_record_kb(keycode, record) || IS_MOUSEKEY(keycode)) && record->event.pressed) {
@@ -717,6 +719,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         keyball.total_mouse_movement = 0;
     }
 #endif
+*/
 
     switch (keycode) {
 #ifndef MOUSEKEY_ENABLE
