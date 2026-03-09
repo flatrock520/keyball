@@ -41,4 +41,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUTO_MOUSE_LAYER_KEEP_TIME 30000
 #pragma once
 
-#define TAPPING_TERM 150
+#define TAPPING_TERM 180
